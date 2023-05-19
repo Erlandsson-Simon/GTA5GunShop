@@ -1,17 +1,21 @@
 public class ReadCSVFile
 {
-    public static List<Item> ReadFile(string fileName)
+    public static Dictionary<int, Item> ReadFile(string fileName)
     {
         List<string> lines = File.ReadAllLines($"{fileName}").ToList();
-        List<Item> tempList = new List<Item>();
+        Dictionary<int, Item> tempDic = new Dictionary<int, Item>();
+
+        int tempId = 1;
 
         foreach (var row in lines)
         {
             String[] item = row.Split(',');
 
-            tempList.Add(new Item(item[0], item[1], item[2]));
+            tempDic.Add(tempId, new Item(item[0], item[1], item[2]));
+
+            tempId++;
         }
 
-        return tempList;
+        return tempDic;
     }
 }
