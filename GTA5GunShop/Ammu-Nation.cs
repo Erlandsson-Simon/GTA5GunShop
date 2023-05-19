@@ -56,6 +56,7 @@ public class Ammunation : InventoryManager
                                     itemChecked = true;
                                 }
                             }
+                            
                             if (itemChecked == false)
                             {
                                 p.inventory.Add(i.Key, i.Value);
