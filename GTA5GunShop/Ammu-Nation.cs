@@ -35,34 +35,18 @@ public class Ammunation : InventoryManager
                     {
                         if (i.Value.cost <= p.Money)
                         {
-                            bool itemChecked = false;
-                            foreach (var j in p.inventory)
+                            bool containsKey = p.inventory.ContainsKey(tempInt);
+
+                            if (containsKey)
                             {
-                                if (!(i.Key == j.Key))
-                                {
-                                    p.inventory.Add(i.Key, i.Value);
-                                    p.Money -= i.Value.cost;
-                                    buying = false;
-                                    Console.Clear();
-
-                                    itemChecked = true;
-                                }
-                                else
-                                {
-                                    Console.WriteLine("You already have this Item, Try another one!");
-                                    buying = false;
-                                    Console.Clear();
-
-                                    itemChecked = true;
-                                }
+                                Console.WriteLine("You already have this item. You can only buy one of each item.");
                             }
-                            
-                            if (itemChecked == false)
+                            else
                             {
                                 p.inventory.Add(i.Key, i.Value);
                                 p.Money -= i.Value.cost;
                                 buying = false;
-                                Console.Clear();
+                                Console.Clear(); 
                             }
                         }
                     }
