@@ -26,6 +26,7 @@ public class Ammunation : InventoryManager
             {
                 buying = false;
                 Console.Clear();
+                return p;
             }
             else if (tempInt > 0 && tempInt < 10)
             {
@@ -40,15 +41,26 @@ public class Ammunation : InventoryManager
                             if (containsKey)
                             {
                                 Console.WriteLine("You already have this item. You can only buy one of each item.");
+                                Console.WriteLine("Press ANYTHING if you understand.");
+                                Console.ReadLine();
+                                Console.Clear();
                             }
                             else
                             {
                                 p.inventory.Add(i.Key, i.Value);
                                 p.Money -= i.Value.cost;
                                 buying = false;
-                                Console.Clear(); 
+                                Console.Clear();
                             }
                         }
+                        else
+                        {
+                            Console.WriteLine("You don't have the money to buy this.");
+                            Console.WriteLine("Press ANYTHING if you understand.");
+                            Console.ReadLine();
+                            Console.Clear();
+                        }
+
                     }
                 }
             }

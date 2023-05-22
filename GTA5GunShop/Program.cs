@@ -54,6 +54,8 @@ while (inStore = true)
 
             default:
                 Console.WriteLine("You have to type something from one of the selectives above!");
+                Console.WriteLine("Press ANYTHING if you understand.");
+                Console.ReadLine();
                 break;
         }
         Console.Clear();
