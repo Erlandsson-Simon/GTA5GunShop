@@ -1,2 +1,1 @@
-just nu kan man inte köpa flera items än ett då krashar programet så det är 
-inte klart men jag gjorde så långt jag hann
+Löste buggen så att man kan köpa flera items men nu kan man inte gå ut ur buy menyn.
