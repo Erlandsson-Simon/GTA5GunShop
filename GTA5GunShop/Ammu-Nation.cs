@@ -1,13 +1,7 @@
 public class Ammunation : InventoryManager
 {
-    public Ammunation()
-    {
-
-    }
-
     public Player buySomething(bool buying, Player p)
     {
-
         while (buying = true)
         {
             Console.WriteLine("Here is everything you can buy:");

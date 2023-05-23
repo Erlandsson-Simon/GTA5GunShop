@@ -6,7 +6,6 @@ bool inLoop = false;
 bool buying = false;
 string tempString;
 
-
 Ammunation a = new Ammunation();
 Player p = new Player();
 
@@ -60,7 +59,6 @@ while (inStore = true)
         }
         Console.Clear();
     }
-
     p = a.buySomething(buying, p);
 }
 

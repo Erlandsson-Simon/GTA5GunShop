@@ -1,16 +1,7 @@
 public class InventoryManager
 {
-
     public Dictionary<int, Item> inventory = new Dictionary<int, Item>();
     public int Money { get; set; }
-
-    protected InventoryManager()
-    {
-
-    }
-
-    private int weaponPrintCount = 0;
-    private int tempInt = 0;
 
     public void printInventory()
     {
