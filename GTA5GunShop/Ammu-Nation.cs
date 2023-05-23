@@ -41,7 +41,7 @@ public class Ammunation : InventoryManager
                             if (containsKey)
                             {
                                 Console.WriteLine("You already have this item. You can only buy one of each item.");
-                                Console.WriteLine("Press ANYTHING if you understand.");
+                                Console.WriteLine("Press ENTER if you understand.");
                                 Console.ReadLine();
                                 Console.Clear();
                             }
@@ -56,7 +56,7 @@ public class Ammunation : InventoryManager
                         else
                         {
                             Console.WriteLine("You don't have the money to buy this.");
-                            Console.WriteLine("Press ANYTHING if you understand.");
+                            Console.WriteLine("Press ENTER if you understand.");
                             Console.ReadLine();
                             Console.Clear();
                         }
@@ -67,7 +67,7 @@ public class Ammunation : InventoryManager
             else
             {
                 Console.WriteLine("You have to type something from one of the selectives above!");
-                Console.WriteLine("Press ANYTHING if you understand");
+                Console.WriteLine("Press ENTER if you understand");
                 Console.ReadLine();
                 Console.Clear();
             }
