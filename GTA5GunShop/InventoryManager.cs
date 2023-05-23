@@ -26,7 +26,7 @@ public class InventoryManager
                 Console.WriteLine("               Meele weapons");
             }
 
-            Console.WriteLine($"ID: {i.Key} Name: {i.Value.name} Cost: {i.Value.cost} Rounds: {i.Value.rounds}");
+            Console.WriteLine($"ID: {i.Key} Name: {i.Value.name} Cost: ${i.Value.cost} Rounds: {i.Value.rounds}");
             tempInt++;
             if (tempInt == 3 || tempInt == 6)
             {
